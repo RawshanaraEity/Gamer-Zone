@@ -148,19 +148,63 @@ nav {
 }
 .games-card img {
   width: 100%;
-  opacity: 1;
 }
+.games-video-card {
+    position: relative;
+}
+.games-video-card i{
+    position:absolute;
+    font-size: 3rem;
+    color: #fff;
+    top: 30%;
+    left: 45%;
+    visibility: hidden;
+    transform: 0.3s;
+}
+.games-video-card:hover i{
+    visibility: visible;
+  
+}
+.games-video-card h4{
+    position:absolute;
+    font-size: 1rem;
+    color: #fff;
+    top: 40%;
+    left: 39%;
+    visibility: hidden;
+    transition: 0.3s ease;
+}
+.games-video-card:hover i,
+.games-video-card:hover h4{
+    visibility: visible;
+}
+
+
+
+.games-video-card::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 81.5%;
+    width: 99%;
+    border: 2px solid #ff42a5;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.60);
+    transition: 0.3s;
+    visibility: hidden;
+}
+.games-video-card:hover::before{
+    visibility: visible;
+   
+} 
+
+
 .games-card-info {
-  color: #534c64;
-  font-size: 1rem;
-  font-weight: 500;
-}
-/* .games-video-card img:hover{
-    border-radius: 16px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%);
-    width: 100%;
-    opacity: 2;
-} */
+    color: #534c64;
+    font-size: 1rem;
+    font-weight: 500;
+  }
 
 /* play games section styles */
 .play-games {
