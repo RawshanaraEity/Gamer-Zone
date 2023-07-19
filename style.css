@@ -214,11 +214,12 @@ nav {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
-  position: relative;
-  left: 80px;
 }
-
+.games-item{
+    text-align: center;
+}
 .games-item-1 {
   display: flex;
   gap: 5px;
@@ -240,6 +241,74 @@ nav {
   transition: 0.3s ease;
   color: #f950e0;
 }
+
+
+/* footer styles */
+.footer-container{
+    padding: 50px 0;
+    text-align: center;
+    background: #0B0223;
+    color: #ffffff;
+}
+.foot-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foot-logo img{
+    width: 60px;
+    height: 40px;
+}
+.foot-logo p {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-left: 10px;
+  }
+  .foot-logo span {
+    color: #ff42a5;
+  }
+  .foot-list ul{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+  .foot-list ul li,
+  .foot-icon-list li{
+    list-style: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  .foot-list li a,
+  .foot-icon-list a,
+  .foot-list-1 a{
+    text-decoration: none;
+    color: #fff;
+  }
+.foot-icon-list ul,
+.foot-list-1 ul{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.foot-icon-list li{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.foot-list-1 li{
+    list-style: none;
+    color: #ffffff99;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.foot-list small{
+    color:#ffffff99;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+
 
 /* responsive styles */
 /* responsive website for mobile devices */
