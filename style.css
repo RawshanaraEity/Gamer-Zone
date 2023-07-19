@@ -168,21 +168,21 @@ nav {
   margin: 100px auto 0px;
   display: flex;
   align-items: center;
-  gap: 130px;
+  gap: 100px;
 }
 .play-games-img {
   width: 58%;
 }
-.play-games-img .img-1{
-    height: ;
-    width: ;
+.play-games-img .img-1 {
+  height: 600px;
+  width: 600px;
 }
 .play-games-img .img-2 {
   height: 320px;
   width: 300px;
   position: relative;
-  top: -150px;
-  left: 526px;
+  top: -190px;
+  left: 400px;
 }
 .play-games-content {
   width: 30%;
@@ -217,8 +217,8 @@ nav {
   justify-content: center;
   gap: 30px;
 }
-.games-item{
-    text-align: center;
+.games-item {
+  text-align: center;
 }
 .games-item-1 {
   display: flex;
@@ -242,73 +242,69 @@ nav {
   color: #f950e0;
 }
 
-
 /* footer styles */
-.footer-container{
-    padding: 50px 0;
-    text-align: center;
-    background: #0B0223;
-    color: #ffffff;
+.footer-container {
+  padding: 50px 0;
+  text-align: center;
+  background: #0b0223;
+  color: #ffffff;
 }
-.foot-logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.foot-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.foot-logo img{
-    width: 60px;
-    height: 40px;
+.foot-logo img {
+  width: 60px;
+  height: 40px;
 }
 .foot-logo p {
-    color: #fff;
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-left: 10px;
-  }
-  .foot-logo span {
-    color: #ff42a5;
-  }
-  .foot-list ul{
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-  }
-  .foot-list ul li,
-  .foot-icon-list li{
-    list-style: none;
-    font-size: 1.1rem;
-    font-weight: 600;
-  }
-  .foot-list li a,
-  .foot-icon-list a,
-  .foot-list-1 a{
-    text-decoration: none;
-    color: #fff;
-  }
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-left: 10px;
+}
+.foot-logo span {
+  color: #ff42a5;
+}
+.foot-list ul {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.foot-list ul li,
+.foot-icon-list li {
+  list-style: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.foot-list li a,
+.foot-icon-list a,
+.foot-list-1 a {
+  text-decoration: none;
+  color: #fff;
+}
 .foot-icon-list ul,
-.foot-list-1 ul{
-    display: flex;
-    justify-content: center;
-    gap: 50px;
+.foot-list-1 ul {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
 }
-.foot-icon-list li{
-    font-size: 2rem;
-    font-weight: 600;
+.foot-icon-list li {
+  font-size: 2rem;
+  font-weight: 600;
 }
-.foot-list-1 li{
-    list-style: none;
-    color: #ffffff99;
-    font-size: 1rem;
-    font-weight: 500;
+.foot-list-1 li {
+  list-style: none;
+  color: #ffffff99;
+  font-size: 1rem;
+  font-weight: 500;
 }
-.foot-list small{
-    color:#ffffff99;
-    font-size: 1rem;
-    font-weight: 600;
+.foot-list small {
+  color: #ffffff99;
+  font-size: 1rem;
+  font-weight: 600;
 }
-
-
-
 
 /* responsive styles */
 /* responsive website for mobile devices */
@@ -329,7 +325,8 @@ nav {
   .banner-container {
     background-image: none;
   }
-  .banner {
+  .banner,
+  .play-games {
     flex-direction: column-reverse;
   }
   .banner-title {
@@ -340,6 +337,46 @@ nav {
   }
   .games-card {
     grid-template-columns: 1fr;
+  }
+  .play-games-content {
+    width: 100%;
+    text-align: center;
+  }
+  .play-games-img {
+    width: 100%;
+  }
+  .play-games-img .img-1 {
+    height: 300px;
+    width: 300px;
+  }
+  .play-games-img .img-2 {
+    height: 190px;
+    width: 190px;
+    position: relative;
+    top: -100px;
+    left: 200px;
+  }
+  .games-item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+  }
+  .games-item-1 img {
+    height: 30px;
+    width: 30px;
+  }
+  .foot-list ul,
+  .foot-icon-list ul,
+  .foot-list-1 ul {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .foot-list ul li {
+    font-size: 1rem;
+  }
+  .foot-icon-list li {
+    font-size: 1.5rem;
+    font-weight: 600;
   }
 }
 
@@ -373,5 +410,29 @@ nav {
   }
   .games-card {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .play-games-img {
+    width: 100%;
+  }
+  .play-games-img .img-1 {
+    height: 300px;
+    width: 300px;
+  }
+  .play-games-img .img-2 {
+    height: 190px;
+    width: 190px;
+    position: relative;
+    top: -100px;
+    left: 200px;
+  }
+
+  .play-games-content {
+    width: 70%;
+
+  }
+  .foot-list ul,
+  .foot-icon-list ul,
+  .foot-list-1 ul {
+    gap: 30px;
   }
 }
