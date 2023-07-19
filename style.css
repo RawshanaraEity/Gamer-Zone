@@ -266,6 +266,7 @@ nav {
 }
 .games-item-1 {
   display: flex;
+  align-items: center;
   gap: 5px;
   padding: 5px;
   color: #0b0223;
@@ -382,6 +383,9 @@ nav {
   .games-card {
     grid-template-columns: 1fr;
   }
+  .games-video-card::before{
+    height: 90%;
+}
   .play-games-content {
     width: 100%;
     text-align: center;
@@ -405,10 +409,12 @@ nav {
     grid-template-columns: repeat(3, 1fr);
     gap: 0;
   }
+  
   .games-item-1 img {
     height: 30px;
     width: 30px;
   }
+ 
   .foot-list ul,
   .foot-icon-list ul,
   .foot-list-1 ul {
@@ -422,6 +428,7 @@ nav {
     font-size: 1.5rem;
     font-weight: 600;
   }
+
 }
 
 /* responsive website for medium devices */
@@ -455,6 +462,9 @@ nav {
   .games-card {
     grid-template-columns: repeat(2, 1fr);
   }
+  .games-video-card::before{
+    height: 85%;
+}
   .play-games-img {
     width: 100%;
   }
