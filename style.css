@@ -12,7 +12,7 @@ body {
 
 /* header section styles */
 nav {
-  max-width: 1100px;
+  max-width: 1440px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -70,7 +70,7 @@ nav {
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 }
 .banner {
-  max-width: 1100px;
+  max-width: 1440px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -120,7 +120,7 @@ nav {
 
 /* online games section style */
 .online-games {
-  max-width: 1100px;
+  max-width: 1440px;
   margin: 100px auto;
 }
 .online-games-content {
@@ -162,8 +162,84 @@ nav {
     opacity: 2;
 } */
 
+/* play games section styles */
+.play-games {
+  max-width: 1440px;
+  margin: 100px auto 0px;
+  display: flex;
+  align-items: center;
+  gap: 130px;
+}
+.play-games-img {
+  width: 58%;
+}
+.play-games-img .img-1{
+    height: ;
+    width: ;
+}
+.play-games-img .img-2 {
+  height: 320px;
+  width: 300px;
+  position: relative;
+  top: -150px;
+  left: 526px;
+}
+.play-games-content {
+  width: 30%;
+}
+.play-games-title {
+  color: #0b0223;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.play-games-title span {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.play-games-info {
+  color: #534c64;
+  font-size: 1rem;
+  font-weight: 400;
+}
 
+/* games item container section styles */
+.games-item-container {
+  background-color: rgba(255, 66, 165, 0.03);
+  padding: 50px 0;
+}
+.games-item {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  position: relative;
+  left: 80px;
+}
 
+.games-item-1 {
+  display: flex;
+  gap: 5px;
+  padding: 5px;
+  color: #0b0223;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: 0.5s ease;
+}
+.games-item-1 img {
+  height: 50px;
+  width: 50px;
+}
+
+.games-item-1:hover {
+  background-color: #ffffff;
+  border: 1px solid #f950e0;
+  border-radius: 50px;
+  transition: 0.3s ease;
+  color: #f950e0;
+}
 
 /* responsive styles */
 /* responsive website for mobile devices */
@@ -227,6 +303,6 @@ nav {
     font-size: 5rem;
   }
   .games-card {
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
