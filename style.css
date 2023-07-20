@@ -273,6 +273,9 @@ nav {
   font-size: 1rem;
   font-weight: 600;
   transition: 0.5s ease;
+  background-color: #ffffff;
+  border: 1px solid transparent;
+  border-radius: 50px;
 }
 .games-item-1 img {
   height: 50px;
@@ -409,7 +412,12 @@ nav {
     grid-template-columns: repeat(3, 1fr);
     gap: 0;
   }
-  
+  .games-item-1{
+    margin: 5px ;
+    border-radius: 50px;
+    font-size: 0.8rem;
+  }
+
   .games-item-1 img {
     height: 30px;
     width: 30px;
