@@ -149,6 +149,7 @@ nav {
 .games-card img {
   width: 100%;
 }
+
 .games-video-card {
     position: relative;
 }
@@ -168,7 +169,7 @@ nav {
 .games-video-card h4{
     position:absolute;
     font-size: 1rem;
-    color: #fff;
+    color: #ff42a5;
     top: 40%;
     left: 39%;
     visibility: hidden;
@@ -186,8 +187,8 @@ nav {
     position: absolute;
     top: 0;
     left: 0;
-    height: 81.5%;
-    width: 99%;
+    height: 99%;
+    width: 100%;
     border: 2px solid #ff42a5;
     border-radius: 10px;
     background: rgba(0, 0, 0, 0.60);
@@ -386,9 +387,6 @@ nav {
   .games-card {
     grid-template-columns: 1fr;
   }
-  .games-video-card::before{
-    height: 90%;
-}
   .play-games-content {
     width: 100%;
     text-align: center;
@@ -470,9 +468,6 @@ nav {
   .games-card {
     grid-template-columns: repeat(2, 1fr);
   }
-  .games-video-card::before{
-    height: 85%;
-}
   .play-games-img {
     width: 100%;
   }
